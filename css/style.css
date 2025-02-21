@@ -927,6 +927,11 @@
     .abtcont {
         padding: 50px 15px;
     }
+    .abtcont h1,.abtcont a{
+        
+        justify-content: center;
+        margin-top:40px;
+    }
 }
 /* facewash about start */
 
@@ -1142,6 +1147,7 @@ hr {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     text-align: left;
+    padding: 15px;
 }
 
 .s2 h2 {
@@ -1670,7 +1676,7 @@ form button:hover {
 /* General Styling for All Boxes */
 .derm1, .derm2, .derm3 {
     position: relative;
-    background: #f8f9fa;
+    background: #f8f9fa;    
     border-radius: 12px;
     padding: 30px;
     text-align: center;
@@ -1774,10 +1780,223 @@ form button:hover {
 
     .col-lg-4, .col-md-6 {
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
+    
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-lg-4, .col-md-6 {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .derm1, .derm2, .derm3 {
+        width: 100%;
+        max-width: 400px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    .btn {
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:300px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+     #font{
+        font-size: 70px;
+     }
+    .col-lg-4, .col-md-6 {
+        width: 500px;
+        margin: 0;
+    }
+
+    .derm1, .derm2, .derm3 {
+        width: 400px;
+        max-width: 400px;
+        padding: 0;
+        text-align: center;
+    }
+    .derm1 p, .derm2 p, .derm3 p {
+        font-size: 13px;
+        color: #555;
+        line-height: normal;
+        word-spacing: 0.2px;
+        text-align: justify; /* Justified text */
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .icon-container {
+        justify-content: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+        width: auto;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .col-lg-4, .col-md-6 {
+        width: 100%;
+    }
+
+    .derm1, .derm2, .derm3 {
+        width: 100%;
+        margin: 0;
+        max-width: 350px;
+        padding: 10px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+
+    .icon-container {
+        justify-content: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+        width: auto;
+    }
+}
+
+@media (min-width:480px) and  (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-lg-4, .col-md-6 {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .derm1, .derm2, .derm3 {
+        width: 100%;
+        max-width: 400px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
 
 /* index service ends */
 
